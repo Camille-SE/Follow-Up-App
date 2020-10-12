@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+body {
+  line-height: 1.4;
+  padding: 5;
+  background-repeat: no-repeat;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  font-size: larger;
+}
+
+.Navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 60px;
+  padding: 0;
+  z-index: 10;
+  background: linear-gradient(176.69deg, #0099FF 0%, #0066FF 120.34%);
+  opacity: 1;
+  transition: background-color 0.2s ease;
+}
+
+.Navlogo{
+  position: relative;
+  margin: 0;
+  margin: 12px 0 0 50%;
+  transform: translate(-50%);
+  display: inline-block;
+  font-size: 26px;
+  user-select: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  z-index: 15;
+}
+
+.listbox{
+  list-style: none;
+  margin: 0;
+  font-weight: 500;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  width: calc(160px + 10vw);
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: calc(70px + 1vw);
+  transition: color 0.2s ease;
+  z-index: 15;
+}
+
+.homeform{
+  color: rgb(16,70,106);
+  border-style: none;
+  background-color: transparent;
+  vertical-align: middle;
+  margin: 200px 200px;
+  padding: 8px 35px 30px;
+  border-radius: 15px;
+  position: relative;
+  top: -90px;
+  text-align: center;
+  position: relative;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+                15px 15px 15px rgba(0,0,0,0.1);
+}
+
+.loginItem{
+  border-style: none;
+  background-color: transparent;
+  right: 1000px;
+  height: 20px;
+  outline: 0;
+  font-size: 18px;
+  color: grey;
+  z-index: 15;
+}
+
+.log {
+  display: block;
+  text-align: center;
+}
+.loginform{
+  color: rgb(16,70,106);
+  border-style: none;
+  background-color: transparent;
+  vertical-align: middle;
+  margin: 200px 200px;
+  padding: 8px 35px 30px;
+  border-radius: 30px;
+  top: 70px;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+                15px 15px 15px rgba(0,0,0,0.1);
+}
+
+.logoutItem {
+  right: 80px;
+}
+
+.newForm {
+  left: 40px;
+  color: rgb(16,70,106);
+}
+
+.reg{
+  display: block;
+  text-align: center;
+}
+
+.regform{
+  color: rgb(16,70,106);
+  border-style: none;
+  background-color: transparent;
+  vertical-align: middle;
+  margin: 200px 200px;
+  padding: 8px 35px 30px;
+  border-radius: 30px;
+  position: relative;
+  top: 70px;
+  position: relative;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+                15px 15px 15px rgba(0,0,0,0.1);
+}
+
+.regItem{
+  border-style: none;
+  background-color: transparent;
+  position: relative;
+  right: 850px;
+  height: 20px;
+  outline: 0;
+  font-size: 18px;
+  color: bisque;
+  border-radius: 50%;
+}
+
+.registrationForm{
+  color: rgb(16,70,106);
+  width: 300px;
+  height: 550px;
+  border-radius: 50%;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+                15px 15px 15px rgba(0,0,0,0.1);
+  vertical-align: middle;
+  margin: auto;
+  padding: 8px 35px 30px;
+  border-radius: 30px;
+  position: relative;
+  left: -5px;
+  top: 200px;
+}
+
+.userform {
+  color: rgb(16,70,106);
+  width: 450px;
+  height: 660px;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+                15px 15px 15px rgba(0,0,0,0.1);
+  vertical-align: middle;
+  margin: auto;
+  padding: 8px 35px 30px;
+  border-radius: 15%;
+  position: relative;
+  left: -5px;
+  top: 50px;
+}
+
+button:hover {
+  background-color: #0099FF;
+}
+
+.myAppsTitle {
+  visibility: hidden;
+}
+
+.appList {
+  top: 90px;
+  left: 475px;
+  background: rgb(223, 230, 236);;
+  width: 500px;
+  margin: 10px 0px 20px 0px;
+  display: list-item;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+              15px 15px 15px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  white-space: pre-wrap;
+  font-weight: bold;
+}
+
+.followupButton {
+  top: 30px;
+  border-radius: 15px;  
+}
+
+
+.delete-button {
+  border-style: outset;
+  color: red;
+  width: 30px;
+  justify-items: right;
+  /* background-color: black; */
+}
+
+.delete-button:hover {
+  color: white;
+}
+
+.formDetails {
+  color: rgb(16,70,106);
+  text-align: center;
+  left: 475px;
+  top: 100px;
+  border: 15px black;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+                15px 15px 15px rgba(0,0,0,0.1);
+  white-space: pre-wrap;
+  padding: 20px;
+  margin: 40px 0px 40px 0px
+}
