@@ -1,0 +1,24 @@
+{
+  "name": "follow-up-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "cd follow-up && npm run build",
+    "install-follow-up": "cd follow-up && npm install",
+    "heroku-postbuild": "npm run install-follow-up && npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Camille-SE/Follow-Up-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Camille-SE/Follow-Up-App/issues"
+  },
+  "homepage": "https://github.com/Camille-SE/Follow-Up-App#readme"
+}
