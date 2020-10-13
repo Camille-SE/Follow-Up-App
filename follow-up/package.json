@@ -23,8 +23,10 @@
     "styled-components-modifiers": "^1.2.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "node server.js",
+    "build": "cd follow-up && npm run build",
+    "install-follow-up": "cd follow-up && npm install",
+    "heroku-postbuild": "npm run install-follow-up && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

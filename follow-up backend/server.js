@@ -6,7 +6,7 @@ const MongoStore = require('connect-mongo')(session)
 const passport = require('./passport')
 const routes = require('./routes')
 
-const port = process.env.PORT || 3001
+const PORT = process.env.PORT || 3001
 const app = express()
 
 // middleware - JSON parsing
@@ -46,5 +46,10 @@ app.use('/api/v1/forms', routes.forms)
 // })
 app.use('/api/v1/auth', routes.auth)
 
+// create constant variable inside heroku
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('follow-up/build'));
+}
+
 // connection
-app.listen(port, () => console.log(`Server is running on port ${port}`))
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
