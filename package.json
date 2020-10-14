@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Camille-SE.github.io/Follow-Up-App",
   "name": "follow-up-app",
   "version": "1.0.0",
   "description": "",
@@ -7,10 +8,10 @@
     "npm": "6.x"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node server.js",
-    "build": "cd follow-up && npm run build",
-    "install-follow-up": "cd follow-up && npm install",
-    "heroku-postbuild": "npm run install-follow-up && npm run build",
+    "build": "react-scripts",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/Camille-SE/Follow-Up-App/issues"
   },
-  "homepage": "https://github.com/Camille-SE/Follow-Up-App#readme"
+  "homepage": "https://github.com/Camille-SE/Follow-Up-App#readme",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
