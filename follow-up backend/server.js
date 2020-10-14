@@ -46,10 +46,5 @@ app.use('/api/v1/forms', routes.forms)
 // })
 app.use('/api/v1/auth', routes.auth)
 
-// create constant variable inside heroku
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('follow-up/build'));
-}
-
 // connection
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
