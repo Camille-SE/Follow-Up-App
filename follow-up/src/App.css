@@ -82,7 +82,7 @@ p {
 .loginItem{
   border-style: none;
   background-color: transparent;
-  right: 1000px;
+  right: 1350px;
   height: 20px;
   outline: 0;
   font-size: 18px;
@@ -140,7 +140,7 @@ p {
   border-style: none;
   background-color: transparent;
   position: relative;
-  right: 850px;
+  right: 1300px;
   height: 20px;
   outline: 0;
   font-size: 18px;
@@ -189,7 +189,7 @@ button:hover {
 
 .appList {
   top: 90px;
-  left: 475px;
+  left: 700px;
   background: rgb(223, 230, 236);;
   width: 500px;
   margin: 10px 0px 20px 0px;
@@ -222,7 +222,7 @@ button:hover {
 .formDetails {
   color: rgb(16,70,106);
   text-align: center;
-  left: 475px;
+  left: 700px;
   top: 100px;
   border: 15px black;
   width: 500px;
